@@ -11,7 +11,7 @@ import CharacterGuide from './CharacterGuideComponent';
 import EpisodeGuide from './EpisodeGuideComponent';
 import EpisodeInfo from './EpisodeInfoComponent';
 import SliderPuzzle from './SliderPuzzleComponent';
-import MemeGenerator from './MemeGeneratorComponent';
+import Meme from './MemeGeneratorComponent';
 import { Link, Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { EPISODES } from '../shared/Episodes';
 
@@ -44,9 +44,9 @@ class Main extends Component {
             );
         }
 
-        const MemeGenerator = () => {
+        const MemePage = () => {
             return (
-                <MemeGenerator />
+                <Meme />
             );
         }
         
@@ -56,7 +56,7 @@ class Main extends Component {
                     <Switch>
                         <Route exact path='/home' component={HomePage} />
                         <Route exact path='/episodes' component={Episodes} />
-                        <Route exact path='/memegenerator' component={MemeGenerator} />
+                        <Route exact path='/meme' component={MemePage} />
                         <Route path='/episodes/:episodeId' component={EpisodeWithId} />
                         <Redirect to='/home' />
                     </Switch>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem, Button, Modal, ModalHeader, ModalBody, ModalFooter, Col, Row, Label } from 'reactstrap';
 
-class MemeGenerator extends Component {
+class Meme extends Component {
     constructor(){
         super()
         this.state ={
@@ -93,4 +93,4 @@ class MemeGenerator extends Component {
     }
 }
 
-export default MemeGenerator;
+export default Meme;
